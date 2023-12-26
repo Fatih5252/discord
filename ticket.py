@@ -64,4 +64,7 @@ class confirm(discord.ui.View):
 async def ticketing(interaction: discord.Interaction):
     embed = discord.Embed(title = "if you need help please click on the button below me!", color = discord.Colour.blue())
     await interaction.channel.send(embed = embed, view = ticket_launcher())
-    await interaction.response.send_message("ticket erstellt!", ephemeral = True)      
+    await interaction.response.send_message("ticket erstellt!", ephemeral = True)    
+
+client.run(BOT TOKEN)
+# pls dont share youre bot token to anyone!

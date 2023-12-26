@@ -3,9 +3,6 @@
 import discord
 from discord import app_commands, utils
 
-client = aclient()
-tree = app_commands.CommandTree(client)
-
 class aclient(discord.Client):
     def __init__(self):
         intents = discord.Intents.default()
@@ -23,6 +20,9 @@ class aclient(discord.Client):
           self.add_view(main())
           self.add_added = True
       print(f"logged in as {self.user}.")
+        
+client = aclient()
+tree = app_commands.CommandTree(client)
 
 class ticket_launcher(discord.ui.View):
     def __init__(self) -> None:

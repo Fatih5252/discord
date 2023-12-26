@@ -48,7 +48,7 @@ class main(discord.ui.View):
     
     @discord.ui.button(label = "close ticket", style = discord.ButtonStyle.red, custom_id = "close")
     async def close(self, interaction, button):
-        embed = discord.Embed(title = "are you sure that oun want to close the ticket?", color = discord.Color.blurple())
+        embed = discord.Embed(title = "are you sure that you want to close the ticket?", color = discord.Color.blurple())
         await interaction.response.send_message(embed = embed, view = confirm(), ephemeral = True)
 
 class confirm(discord.ui.View):

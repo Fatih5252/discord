@@ -11,4 +11,7 @@ tree = app_commands.CommnadTree(client)
 async def self(interaction: discord.Interaction, name: str)
     await interaction.response.send_message(f"Hello {name}!", ephemeral = True)
   
-  client.run(BOT TOKEN)
+client.run(BOT TOKEN)
+
+# ephemeral = Frue = only you can see the message
+# ephemeral = False = everyone can see the message

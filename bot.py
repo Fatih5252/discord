@@ -1,3 +1,5 @@
+# how to make a slash command (for beginners)
+
 import discord
 from discord.ext import app_commands
 

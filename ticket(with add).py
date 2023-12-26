@@ -1,5 +1,5 @@
 # ticketing command with /add and /remove command
-# don't want that commands here without the /add and /remove command: https://github.com/Fatih5252/discord/blob/main/ticket.py
+# don't want that commands? here without the /add and /remove command: https://github.com/Fatih5252/discord/blob/main/ticket.py
 # pip install discord.py
 # ephemeral = True = only you can see this message
 # ephemeral = False = everyone can see the message
@@ -78,6 +78,13 @@ async def add(interaction: discord.Interaction, user: discord.Member):
         await interaction.response.send_message(f"{user.mention} is added to this ticket channel from: {interaction.user.mention}!", ephemeral = False)
     else: await interaction.response.send_message("this channel is not a ticket channel!", ephemeral = True) 
 
-
+@tree.command(name = "remove", description = "remove a person from a ticket channel!", guild = discord.Object(id = SERVER ID))
+@app_commands.describe(user = "please choose a user")
+async def remove(interaction: discord.Interaction, user: discord.Member):
+    if "ticket-for-" in interaction.channel.name:
+        await interaction.channel.set_permissions(user, view_channel = False)
+        await interaction.response.send_message(f"{user.mention} is removed successfully from this ticket channel from: {interaction.user.mention}!", ephemeral = False)
+    else: await interaction.response.send_message("this channel is not a ticket channel!", ephemeral = True)
+        
 client.run(BOT TOKEN)
 # pls dont share youre bot token to anyone!

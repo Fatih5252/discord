@@ -1,4 +1,6 @@
 # how to make a slash command (for beginners)
+# pip install discord.py
+# pls dont share youre discord token to anyone!! 
 
 import discord
 from discord.ext import app_commands
@@ -13,5 +15,5 @@ async def self(interaction: discord.Interaction, name: str)
   
 client.run(BOT TOKEN)
 
-# ephemeral = Frue = only you can see the message
+# ephemeral = True = only you can see the message
 # ephemeral = False = everyone can see the message

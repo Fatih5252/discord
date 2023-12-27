@@ -12,7 +12,7 @@ async def self(interaction: discord.Interaction, text: str, who: discord.Member)
         await who.send(f"Hello {who.name}, you have a dm from {interaction.user.name}: {text}")
         await interaction.response.send_message('Dm successfully sent!', ephemeral=True)
     except discord.Forbidden:
-        await interaction.response.send_message('I can't dm this user make sure that the user have dms on!', ephemeral=True)
+        await interaction.response.send_message("I can't dm this user make sure that the user have dms on!", ephemeral=True)
 
 client.run(BOT TOKEN)
 # pls dont send your BOT TOKEN to anyone!!!

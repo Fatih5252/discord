@@ -1,5 +1,5 @@
 # today i will show you basic logs!
-# today is delete and edit message!
+# today is delete message!
 # you want to know how to code a ticket system? here: https://github.com/Fatih5252/discord/tree/main/ticketing
 import discord
 from discord import app_commands

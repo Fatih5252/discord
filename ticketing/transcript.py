@@ -1,7 +1,7 @@
 # today i will show you how to make a transcript in your ticket system!
 # you want a /add and /remove command for you ticket system? here: https://github.com/Fatih5252/discord/blob/main/ticketing/ticket(with%20add).py
 # don't want any of that? here: https://github.com/Fatih5252/discord/blob/main/ticketing/ticket.py
-import discord
+import discord, os
 from discord import app_commands, utils
 from datetime import datetime
 

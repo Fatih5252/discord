@@ -29,12 +29,6 @@ async def on_message_delete(message):
     z = client.get_channel(CHANNEL ID)
     embed = discord.Embed(title = f"{message.author} hat ein Nachricht gelöscht!", description = f"gelöchtes nachricht: {message.content}\nAutor: {message.author.mention}\nChannel: {message.channel.mention}", timestamp = datetime.now(), color = discord.Colour.red())
     await z.send(embed = embed)
-
-@client.event
-async def on_message_edit(before, after):
-    z = client.get_channel(CHANNEL ID)
-    embed = discord.Embed(title = f"{before.author} editet a message", description = f"before: {before.content}\now: {after.content}\nAuthor: {before.author.mention}\nChannel: {before.channel.mention}", timestamp = datetime.now(), colour = discord.Colour.blue())
-    await z.send(embed = embed)
   
 client.run(BOT TOKEN)
 # pls dont share your bot token to anyone!!!

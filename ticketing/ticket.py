@@ -1,6 +1,6 @@
 # today i will show you how to make a ticket command!
 # pip install discord.py
-# you want a /add and /remove command for you ticket system? here: https://github.com/Fatih5252/discord/blob/main/ticket(with%20add).py
+# you want a /add and /remove command for you ticket system? here: https://github.com/Fatih5252/discord/blob/main/ticketing/ticket(with%20add).py
 import discord
 from discord import app_commands, utils
 

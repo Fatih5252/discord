@@ -24,3 +24,11 @@ class aclient(discord.Client):
 client = aclient()
 tree = app_commands.CommandTree(client)
 
+@client.event
+async def on_message_delete(message):
+    z = client.get_channel(CHANNEL ID)
+    embed = discord.Embed(title = f"{message.author} deleted a message!", description = f"deleted message: {message.content}\nAuthor: {message.author.mention}\nChannel: {message.channel.mention}", timestamp = datetime.now(), color = discord.Colour.red())
+    await z.send(embed = embed)
+
+client.run(BOT TOKEN)
+# pls dont share you bot token to anyone!!!!

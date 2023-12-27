@@ -1,4 +1,5 @@
 # pip install discord.py
+# you want slash command? here: https://github.com/Fatih5252/discord/blob/main/Commands/slash.command.py
 import discord
 from discord.ext import commands
 

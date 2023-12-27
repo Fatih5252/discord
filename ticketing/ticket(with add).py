@@ -1,4 +1,4 @@
- ticketing command with /add and /remove command
+ # ticketing command with /add and /remove command
 # don't want that commands? here without the /add and /remove command: https://github.com/Fatih5252/discord/blob/main/ticketing/ticket.py
 # pip install discord.py
 # ephemeral = True = only you can see this message

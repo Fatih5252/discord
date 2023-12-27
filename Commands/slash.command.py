@@ -1,7 +1,7 @@
 # how to make a slash command (for beginners)
 # pip install discord.py
 # pls dont share youre discord token to anyone!! 
-
+# you want a prefix command? here: https://github.com/Fatih5252/discord/blob/main/Commands/prefix.py
 import discord
 from discord.ext import app_commands
 

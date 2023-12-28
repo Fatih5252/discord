@@ -28,7 +28,7 @@ tree = app_commands.CommandTree(client)
 @client.event
 async def on_message_edit(before, after):
     z = client.get_channel(CHANNEL ID)
-    embed = discord.Embed(title = f"{before.author} edited a message", description = f"before: {before.content}\nafter: {after.content}\nAuthor: {before.author.mention}\nChannel: {before.channel.mention}", timestamp = datetime.now(), colour = discord.Colour.blue())
+    embed = discord.Embed(title = f"{before.author} edited a message", description = f"before: {before.content}\nafter: {after.content}\nAuthor: {before.author.mention}\nChannel: {before.channel.mention}", timestamp = datetime.now(), color = discord.Colour.blue())
     await z.send(embed = embed)
 
 client.run(BOT TOKEN)

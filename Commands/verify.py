@@ -39,7 +39,7 @@ class aclient(discord.Client):
 client = aclient()
 tree = app_commands.CommandTree(client)
 
-@tree.command(name = "verify", description = "verify button", guild = discord.Object(id = 1101408474631507998))
+@tree.command(name = "verify", description = "verify button", guild = discord.Object(id = SERVER ID))
 async def button(interaction: discord.Interaction):
     await interaction.response.send_message("success!", ephemeral = True)
     embed = discord.Embed(title = "accept the rules!", description = "press the button below this message to verify yourself!!", color = discord.Colour.green())

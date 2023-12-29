@@ -16,8 +16,8 @@ class button_view(discord.ui.View):
             client.role = interaction.guild.get_role(ROLE ID)
         if client.role not in interaction.user.roles:
             await interaction.user.add_roles(client.role)
-            await interaction.response.send_message(f"Succesfully added the role {interaction.role.mention}!", ephemeral = True)
-        else: await interaction.response.send_message(f"you have already the {interaction.role.mention}!!", ephemeral = True)
+            await interaction.response.send_message(f"Succesfully added the role {client.role.mention}!", ephemeral = True)
+        else: await interaction.response.send_message(f"you have already the {client.role.mention}!!", ephemeral = True)
 
 class aclient(discord.Client):
     def __init__(self):

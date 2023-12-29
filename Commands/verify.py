@@ -6,7 +6,11 @@
 import discord
 from discord import app_commands
 
-@discord.ui.button(label = "verify", style = discord.ButtonStyle.green, custom_id = "verify")
+class button_view(discord.ui.View):
+    def __init__(self) -> None:
+        super().__init__(timeout = None)
+        
+  @discord.ui.button(label = "verify", style = discord.ButtonStyle.green, custom_id = "verify")
     async def verify(self, interaction: discord.Interaction, button: discord.ui.Button):
         if type(client.role) is not discord.Role:
             client.role = interaction.guild.get_role(ROLE ID)

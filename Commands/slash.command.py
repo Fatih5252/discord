@@ -3,7 +3,7 @@
 # pls dont share youre discord token to anyone!! 
 # you want a prefix command? here: https://github.com/Fatih5252/discord/blob/main/Commands/prefix.py
 import discord
-from discord.ext import app_commands
+from discord import app_commands
 
 intents = discord.Intents.default()
 client = aclient()

@@ -7,3 +7,4 @@ slash commands
 ticketing 
 
 and many more!
+ [discord](discord.com)

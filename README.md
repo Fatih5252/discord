@@ -6,4 +6,4 @@ slash commands
 
 ticketing 
 
-and many more! test
+and many more!

@@ -17,7 +17,7 @@ class aclient(discord.Client):
       await self.wait_until_ready()
 
       if not self.synced:
-          await tree.sync(guild = discord.Object(id = 95879746735478))
+          await tree.sync(guild = discord.Object(id = SERVER ID))
           self.synced = True
       if not self.added:
           self.add_added = True

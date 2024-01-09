@@ -7,3 +7,5 @@ slash commands
 ticketing 
 
 and many more!
+
+[![Discord Bots](https://top.gg/api/widget/1193954162656935987.svg)(https://top.gg/bot/1193954162656935987)
